@@ -42,25 +42,25 @@ colors:
 
     # Normal colors
     normal:
-        black: "#45475A" # surface1
-        red: "#F38BA8" # red
-        green: "#A6E3A1" # green
-        yellow: "#F9E2AF" # yellow
-        blue: "#89B4FA" # blue
-        magenta: "#F5C2E7" # pink
-        cyan: "#94E2D5" # teal
-        white: "#BAC2DE" # subtext1
+        black: "#313539" # surface1
+        red: "#b02626" # red
+        green: "#40a62f" # green
+        yellow: "#f2e635" # yellow
+        blue: "#314ad0" # blue
+        magenta: "#b30ad0" # pink
+        cyan: "#32d0fc" # teal
+        white: "#acadb1" # subtext1
 
     # Bright colors
     bright:
-        black: "#585B70" # surface2
-        red: "#F38BA8" # red
-        green: "#A6E3A1" # green
-        yellow: "#F9E2AF" # yellow
-        blue: "#89B4FA" # blue
-        magenta: "#F5C2E7" # pink
-        cyan: "#94E2D5" # teal
-        white: "#A6ADC8" # subtext0
+        black: "#676f78" # surface2
+        red: "#b55454" # red
+        green: "#78a670" # green
+        yellow: "#faf380" # yellow
+        blue: "#707fd0" # blue
+        magenta: "#c583d0" # pink
+        cyan: "#8adaf1" # teal
+        white: "#e0e3e7" # subtext0
 
     # Dim colors
     dim:

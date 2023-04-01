@@ -527,7 +527,8 @@ end
 alias undopush "git push -f origin HEAD^:master"
 
 # reporting tools - install when not installed
-#neofetch
+#figlet -c -f 3d "I Use Arch Btw" | lolcat
+neofetch
 #screenfetch
 #alsi
 #paleofetch
@@ -536,7 +537,7 @@ alias undopush "git push -f origin HEAD^:master"
 #sfetch
 #ufetch
 #ufetch-arco
-pfetch
+#pfetch
 #sysinfo
 #sysinfo-retro
 #cpufetch
