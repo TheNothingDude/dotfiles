@@ -125,8 +125,13 @@ super + e
 #	thunar
 
 #dmenu
-super + d
+super + shift + d
 	dmenu_run -i -nb '#191919' -nf '#94E2E5' -sb '#94E2E5' -sf '#191919' -fn 'JetBrainsMono Nerd Font:bold:pixelsize=14'
+
+
+super + d
+	rofi -show drun
+
 
 #reload sxhkd:
 super + shift + s
