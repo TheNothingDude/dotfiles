@@ -100,8 +100,7 @@ super + m
 
 #alacritty
 super + Return
-    alacritty
-
+    kitty
 #Xkill
 super + Escape
     xkill
