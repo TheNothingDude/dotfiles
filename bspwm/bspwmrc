@@ -1,8 +1,8 @@
 #! /bin/sh
 
 #Autostart
-~/.config/polybar/launch.sh &
 picom --config ~/.config/picom/picom.conf &
+xsetroot -cursor_name left_ptr &
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
 nm-applet &
 #nitrogen --restore &
@@ -10,6 +10,7 @@ nm-applet &
 numlockx on &
 caffeine &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
+~/.config/polybar/launch.sh &
 xfce4-power-manager &
 #bspwm
 bspc monitor -d I II III IV V VI VII VIII IX X
