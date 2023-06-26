@@ -12,11 +12,12 @@ super + d
 
 
 super + w
-   brave
+   firefox
 
 super + e
    thunar
-
+super + x
+  archlinux-logout
 
 # make sxhkd reload its configuration files:
 super + Escape
