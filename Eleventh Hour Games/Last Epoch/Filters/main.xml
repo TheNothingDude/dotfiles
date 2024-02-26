@@ -1,0 +1,25 @@
+﻿<ItemFilter xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <name>main</name>
+  <filterIcon>1</filterIcon>
+  <filterIconColor>13</filterIconColor>
+  <description />
+  <lastModifiedInVersion>1.0.0.0</lastModifiedInVersion>
+  <lootFilterVersion>2</lootFilterVersion>
+  <rules>
+    <Rule>
+      <type>HIDE</type>
+      <conditions>
+        <Condition i:type="RarityCondition">
+          <rarity>NORMAL MAGIC</rarity>
+        </Condition>
+      </conditions>
+      <color>0</color>
+      <isEnabled>true</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+  </rules>
+</ItemFilter>
