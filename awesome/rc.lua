@@ -54,7 +54,7 @@ end
 beautiful.init("~/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "wezterm"
+terminal = "kitty"
 editor = os.getenv("vscodium") or "code"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -140,7 +140,7 @@ globalkeys = gears.table.join(
 		awful.client.focus.byidx(-1)
 	end, { description = "focus previous by index", group = "client" }),
 	awful.key({ modkey }, "w", function()
-		awful.spawn("firefox")
+		awful.spawn("brave")
 	end, { description = "open a web browser", group = "launcher" }),
 
 	-- Layout manipulation
@@ -380,7 +380,7 @@ awful.rules.rules = {
 client.connect_signal("manage", function(c)
 	-- Set the windows at the slave,
 	-- i.e. put it at the end of others instead of setting it master.
-	-- if not awesome.startup then awful.client.setslave(c) end
+	if not awesome.startup then awful.client.setslave(c) end
 
 	if awesome.startup and not c.size_hints.user_position and not c.size_hints.program_position then
 		-- Prevent clients from being unreachable after screen count changes.
@@ -442,6 +442,8 @@ end)
 -- autostart
 awful.spawn.with_shell("picom --config ~/.config/picom/picom.conf")
 awful.spawn.with_shell("nm-applet")
+awful.spawn.with_shell("~/.fehbg")
 awful.spawn.with_shell("/usr/lib/xfce4/notifyd/xfce4-notifyd")
 awful.spawn.with_shell("/home/thenothingdude/.config/polybar/launch.sh")
 awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
+
