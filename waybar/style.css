@@ -9,8 +9,8 @@ window#waybar {
     color: #FFFFFF;
     transition-property: background-color;
     transition-duration: .5s;
-}
 
+}
 window#waybar.hidden {
     opacity: 0.2;
 }
@@ -63,7 +63,7 @@ button {
 }
 
 #workspaces button.active {
-    background-color: #000;
+    background-color: #64727D;
     border-radius: 10px;
 }
 
