@@ -92,7 +92,7 @@ gtk = {
  programs.fish = {
  	enable = true;
 	shellAliases = {
-		ll = "eza -a --icons --group-directories-first";
+		ls = "eza -a --icons --group-directories-first";
 	        update = "sudo nixos-rebuild switch --flake /etc/nixos/#default";
 		v = "nvim";
 		sv = "sudo nvim";
@@ -118,6 +118,11 @@ gtk = {
  };
  programs.starship = {
 	enable = true;
+	settings = {
+		add_newline = false;
+		line_break = {disabled = true;};
+
+	};
  
  };
   # Let Home Manager install and manage itself.

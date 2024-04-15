@@ -112,10 +112,27 @@
   environment.sessionVariables = {
 	NIXOS_OZONE_WL = "1";
   };
+  system.autoUpgrade = {
+  enable = true;
+  flake = "/etc/nixos#default";
+  flags = [
+    "--update-input"
+    "nixpkgs"
+    "-L" # print build logs
+   ];
+   dates = "9:00";
+   randomizedDelaySec = "45min";
+  };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # install
   environment.systemPackages = with pkgs; [
+    unzip 
+    unrar
+    osu-lazer
+    python3Full
+    vscodium
+    onlyoffice-bin
     qbittorrent
     libnotify
     lutris
